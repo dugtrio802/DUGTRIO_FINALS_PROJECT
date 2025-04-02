@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;500;700&display=swap');
+
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F7EAD5;
+    color: rgb(0, 0, 0);
+    background-image: url(redbg.jpg);
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Press Start 2P', cursive;
+}
+
+nav.navbar {
+    padding: 10px 15px;
+    min-height: 60px;
+    height: 75px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.699);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+nav.navbar .navbar-brand img {
+    max-height: 100px;
+    padding: 5px;
+}
+
+a.navbar-brand {
+    height: 70px;
+}
+
+nav.navbar .navbar-nav {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.navbar-nav {
+    margin: auto;
+    gap: 70px;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.pokemon-button {
+    font-family: 'Press Start 2P', cursive;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.pokemon-button:hover {
+    color: gold;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-toggler {
+    margin-left: auto;
+    border: none;
+}
+
+.offcanvas {
+    width: 250px;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: row;
+    height: 800px;
+    width: 100%;
+    margin-top: 15px;
+    align-items: center;
+
+
+}
+
+.left p {
+    text-align: center;
+    font-size: 14px;
+}
+
+.left h3 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.uid {
+    display: flex;
+    text-align: center;
+}
+
+form form {
+    width: 100%;
+    background-size: cover;
+}
+
+form .col-sm-10 {
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.uid-row {
+    display: flex;
+    justify-content: center;
+}
+
+footer .row {
+    margin: 0;
+    padding: 0;
+}
+
+form .uidbox {
+    width: 70%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.uidbox p {
+    display: flex;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.left,
+.right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    padding: 25px;
+    box-shadow: -3px -3px 5px rgba(0, 0, 0, 0.2), 3px 3px 10px rgba(0, 0, 0, 0.25);
+    animation: float 5s infinite ease-in-out;
+}
+
+.left {
+    border-radius: 10px 0px 0px 10px;
+    background-color: rgba(250, 235, 215, 0.96);
+}
+
+fieldset .col-sm-10 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.right {
+    border-radius: 0px 10px 10px 0px;
+    background-image: url(ash3.jpg);
+    background-size: cover;
+}
+
+.right:hover {
+    transition: 0.7s ease-in;
+    background: url(Pikachu\ 4K\ phone\ Wallpaper.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+form .btn-container {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+form .col-form-label {
+    margin-top: 50px;
+}
+
+form .btn {
+    width: 350px;
+    color: rgb(255, 255, 255);
+    background-color: red;
+    box-shadow: 0px 5px 0px #c0392b;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+
+
+}
+
+form .btn:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+    transition: ease-in 0.2s;
+    animation: float 2s infinite ease-in-out;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.form-check-label {
+    font-size: 10px;
+    text-align: justify;
+}
+
+footer {
+    width: 100%;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.821);
+    font-family: "Poppins";
+    color: white;
+    text-align: center;
+    padding: 0;
+    gap: 0;
+}
+
+footer p {
+    margin-left: 50px;
+}
+
+footer .nav-link {
+    color: white;
+    text-align: left;
+    margin-left: 50px;
+}
+
+@media screen and (max-width:1000px) {
+
+    .left p,
+    .left h3 {
+        font-size: 14px;
+    }
+
+    .left {
+        margin-left: none;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .right {
+        display: none;
+    }
+
+    form .btn-primary {
+        width: 200px;
+        font-size: 14px;
+    }
+
+    .form-check-label {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 995px) {
+    .nav-head {
+        display: none !important;
+    }
+
+    .navbar-toggler {
+        display: block !important;
+    }
+
+    .offcanvas {
+        display: block !important;
+        opacity: 95%;
+
+    }
+
+    .pokemon-button {
+        color: black;
+        font-size: 16px;
+    }
+
+    .pokemon-button:hover {
+        color: red;
+    }
+}
+
+@media screen and (min-width: 996px) {
+    .navbar-toggler {
+        display: none !important;
+    }
+
+    .offcanvas {
+        display: none !important;
+    }
+}
