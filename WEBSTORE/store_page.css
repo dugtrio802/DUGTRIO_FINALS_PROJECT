@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;500;700&display=swap');
+
+nav.navbar {
+    padding: 10px 15px;
+    min-height: 60px;
+    height: 75px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.909);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.868);
+
+}
+
+nav.navbar .navbar-brand img {
+    max-height: 100px;
+    padding: 5px;
+}
+
+a.navbar-brand {
+    height: 70px;
+}
+
+nav.navbar .navbar-nav {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.navbar-nav {
+    margin: auto;
+    gap: 70px;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.pokemon-button {
+    font-family: 'Press Start 2P', cursive;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.pokemon-button:hover {
+    color: gold;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-toggler {
+    margin-left: auto;
+    border: none;
+}
+
+.offcanvas {
+    width: 250px;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Promo */
+.new-promo {
+    background-color: #ffd000;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-promo-highlight {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Secondary Nav */
+.new-secondary-nav {
+    background-color: #a31414;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.new-secondary-nav a {
+    margin: 0 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+.new-secondary-nav a:hover {
+    color: #ffae00;
+}
+
+.new-category-card {
+    background-color: white;
+    padding: 20px;
+    margin: 0 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.new-category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Featured */
+.new-featured {
+    text-align: center;
+    padding: 20px 0;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.new-featured-label {
+    color: red;
+}
+
+.new-featured-price {
+    margin-top: 10px;
+}
+
+.new-old-price {
+    text-decoration: line-through;
+}
+
+/* Item Boxes Section */
+.new-item-boxes {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin: 20px auto;
+    max-width: 1200px;
+    background-image: url('STORE IMAGES/containerbg.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 0;
+}
+
+.new-item-box-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.new-item-box {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    box-shadow: 0 9px 8px rgba(0, 0, 0, 0.5);
+}
+
+.new-item-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.new-item-image {
+    width: 100%;
+    max-height: 180px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.new-item-details {
+    margin-top: 15px;
+}
+
+.new-item-name,
+.new-coin-name,
+.new-bundle-name {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.new-item-price,
+.new-coin-price {
+    font-size: 20px;
+    color: #008000;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+/* Poke Coins and Daily bundles */
+.new-poke-coins,
+.new-daily-bundles {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin: 20px auto;
+    max-width: 1200px;
+    background-image: url('STORE IMAGES/containerbg.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.new-coin-box-grid,
+.new-bundle-box-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.new-coin-box,
+.new-bundle-box {
+    background-color: white; 
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    box-shadow: 0 9px 8px rgba(0, 0, 0, 0.5);
+}
+.new-coin-box:hover,
+.new-bundle-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.new-coin-image,
+.new-bundle-image {
+    width: 100px;
+    height: 80px;
+    margin: 10px auto;
+}
+
+.new-item-details,
+.new-coin-details,
+.new-bundle-details {
+    margin-top: 10px;
+}
+
+.new-item-price,
+.new-coin-price,
+.new-bundle-price {
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 8px;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #7c1818, #ff6464);
+    border-radius: 25px;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.new-item-price:hover,
+.new-coin-price:hover,
+.new-bundle-price:hover {
+    background: linear-gradient(to right, #ff6666, #ff9999);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Modal Styles */
+.modal-content {
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.modal-header {
+    border-bottom: none;
+    position: relative;
+}
+
+.modal-title {
+    text-align: center;
+    width: 100%;
+    color: #000;
+    font-size: 1.2em;
+}
+
+.modal-body {
+    text-align: center;
+}
+
+.modal-image img {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.modal-body ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.modal-body li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.modal-body li img {
+    width: 50px !important;
+    height: 64px !important;
+    margin-right: 8px;
+}
+
+.modal-price {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: bold;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #7c1818, #ff6464);
+    border-radius: 25px;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modal-price:hover {
+    background: linear-gradient(to right, #ff6666, #ff9999);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#itemModalMessage {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.new-item-boxes h2,
+.new-poke-coins h2,
+.new-daily-bundles h2 {
+    color: rgb(0, 0, 0);
+    font-family: 'Press Start 2P', cursive;
+}
+
+footer {
+    width: 100%;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.821);
+    font-family: "Poppins";
+    color: white;
+    text-align: center;
+    padding: 0;
+    gap: 0;
+}
+
+footer p {
+    margin-left: 50px;
+}
+
+footer .nav-link {
+    color: white;
+    text-align: left;
+    margin-left: 50px;
+}
+
+/* Red Background Section */
+.red-background-section {
+    background-image: url('STORE IMAGES/redbg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Add these new CSS rules to your store.css */
+.big-gif-container {
+    width: 100%;
+    text-align: center;
+    background-color: #9e0000;
+    position: relative;
+    padding-bottom: 28.125%; 
+    height: 0;
+    overflow: hidden;
+}
+
+.big-gif {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 950px) {
+    .nav-head {
+        display: none !important;
+    }
+
+    .navbar-toggler {
+        display: block !important;
+    }
+
+    .offcanvas {
+        display: block !important;
+        opacity: 95%;
+
+    }
+
+    .pokemon-button {
+        color: black;
+        font-size: 16px;
+    }
+
+    .pokemon-button:hover {
+        color: red;
+    }
+}
+
+@media screen and (min-width: 951px) {
+    .navbar-toggler {
+        display: none !important;
+    }
+
+    .offcanvas {
+        display: none !important;
+    }
+}
