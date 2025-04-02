@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-image: url('redbg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+nav.navbar {
+    padding: 10px 15px;
+    min-height: 60px;
+    height: 75px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.699);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+nav.navbar .navbar-brand img {
+    max-height: 100px;
+    padding: 5px;
+}
+
+a.navbar-brand {
+    height: 70px;
+}
+
+nav.navbar .navbar-nav {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.navbar-nav {
+    margin: auto;
+    gap: 70px;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.pokemon-button {
+    font-family: 'Press Start 2P', cursive;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.pokemon-button:hover {
+    color: gold;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-toggler {
+    margin-left: auto;
+    border: none;
+}
+
+.offcanvas {
+    width: 250px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.transactions-container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #333;
+    background-image: url('transbg.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+
+.transactions-container h2 {
+    margin-bottom: 20px;
+    font-family: 'Press Start 2P', cursive;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    display: inline-block;
+    color: #007bff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.transaction-list {
+    list-style: none;
+    padding: 0;
+}
+
+.transaction-header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+    padding: 10px 0;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.8em;
+    border-bottom: 2px solid black;
+    text-align: left;
+}
+
+.transaction-header span {
+    padding: 8px;
+}
+
+.transaction-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+    border-bottom: 1px solid black;
+    padding: 15px 0;
+    align-items: center;
+    text-align: left;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.8em;
+}
+
+.transaction-item:last-child {
+    border-bottom: none;
+}
+
+.transaction-item img.transaction-img {
+    max-width: 80px;
+    height: auto;
+    margin-right: 15px;
+    grid-column: 1;
+}
+
+.transaction-item span {
+    padding: 8px;
+}
+
+.transaction-item .date,
+.transaction-item .amount,
+.transaction-item .status {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.8em;
+}
+
+@media (max-width: 600px) {
+    .transaction-header span {
+        display: none;
+    }
+
+    .transaction-item {
+        grid-template-columns: 1fr;
+    }
+
+    .transaction-item span {
+        display: block;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .transaction-item .image-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        justify-content: center;
+    }
+
+    .transaction-item .image-container img.transaction-img {
+        margin-right: 10px;
+    }
+}
+
+.transaction-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.transaction-nav button {
+    background: none;
+    border: none;
+    font-size: 2em;
+    color: #87CEEB;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+.transaction-nav button:hover {
+    background-color: rgba(135, 206, 250, 0.2);
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.quantity-label {
+    position: absolute;
+    bottom: 5px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: black;
+}
+
+.page-transition-out {
+    animation: fadeOut 0.3s ease-in-out forwards;
+}
+
+.page-transition-in {
+    animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.page-indicators {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.page-circle {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #87CEEB;
+    border-radius: 50%;
+    margin: 0 5px;
+    position: relative;
+}
+
+.page-circle img {
+    filter: brightness(1.2) saturate(0.8) hue-rotate(180deg);
+}
+
+.active-page-icon {
+    width: 25px;
+    height: 25px;
+    margin: 0 5px;
+}
+
+.nav-icon {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.active-nav-icon {
+    display: block;
+}
+
+.inactive-nav-icon {
+    display: none;
+}
+
+.transaction-nav button {
+    position: relative;
+}
+
+@media screen and (max-width: 1145px) {
+    .nav-head {
+        display: none !important;
+    }
+
+    .navbar-toggler {
+        display: block !important;
+    }
+
+    .offcanvas {
+        display: block !important;
+        opacity: 95%;
+
+    }
+
+    .pokemon-button {
+        color: black;
+        font-size: 16px;
+    }
+
+    .pokemon-button:hover {
+        color: red;
+    }
+}
+
+@media screen and (min-width: 1146px) {
+    .navbar-toggler {
+        display: none !important;
+    }
+
+    .offcanvas {
+        display: none !important;
+    }
+}
