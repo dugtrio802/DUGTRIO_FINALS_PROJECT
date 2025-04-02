@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-image: url('redbg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav.navbar {
+    padding: 10px 15px;
+    min-height: 60px;
+    height: 75px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.699);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+nav.navbar .navbar-brand img {
+    max-height: 100px;
+    padding: 5px;
+}
+
+a.navbar-brand {
+    height: 70px;
+}
+
+nav.navbar .navbar-nav {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.navbar-nav {
+    margin: auto;
+    gap: 70px;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.pokemon-button {
+    font-family: 'Press Start 2P', cursive;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.pokemon-button:hover {
+    color: gold;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-toggler {
+    margin-left: auto;
+    border: none;
+}
+
+.offcanvas {
+    width: 250px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+}
+
+.cart-container {
+    width: 95%;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: rgba(234, 214, 214, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+.cart-container h2 {
+    font-family: 'Press Start 2P', cursive;
+    color: #e00000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+.cart-item, .cart-header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #000000;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item span, .cart-header span {
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cart-checkout {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.checkout-button {
+    background-color: #840000;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.checkout-button:hover {
+    background-color: #ad0000;
+    text-decoration: none;
+    color: #f7b406;
+}
+
+.checkout-icon {
+    max-height: 20px;
+}
+
+.checkout-total {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cart-title-box h2 {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+.cart-title-box {
+    background-color: #2a0000;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+.cart-item img {
+    max-width: 50px;
+}
+
+@media screen and (max-width: 1150px) {
+    .nav-head {
+        display: none !important;
+    }
+
+    .navbar-toggler {
+        display: block !important;
+    }
+
+    .offcanvas {
+        display: block !important;
+        opacity: 95%;
+
+    }
+
+    .pokemon-button {
+        color: black;
+        font-size: 16px;
+    }
+
+    .pokemon-button:hover {
+        color: red;
+    }
+}
+
+@media screen and (min-width: 1151px) {
+    .navbar-toggler {
+        display: none !important;
+    }
+
+    .offcanvas {
+        display: none !important;
+    }
+}
