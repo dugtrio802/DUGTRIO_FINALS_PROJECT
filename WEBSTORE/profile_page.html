@@ -1,0 +1,171 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Go</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="profile_page.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" id="navi">
+        <a class="navbar-brand" href="homepage(logout).html">
+            <img src="GLOGO.png" alt="GLOGO Logo" height="100">
+        </a>
+
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse nav-head">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="pokemon-button" href="homepage(logout).html">
+                        <p>News</p>
+                    </a></li>
+                <li class="nav-item"><a class="pokemon-button" href="homepage(logout).html">
+                        <p>FAQs</p>
+                    </a></li>
+                <li class="nav-item"><a class="pokemon-button" href="store_page.html">
+                        <p>Store</p>
+                    </a></li>
+                <li class="nav-item"><a class="pokemon-button" href="cart_page.html">
+                        <p>Cart</p>
+                    </a></li>
+                <li class="nav-item"><a class="pokemon-button" href="transaction_page.html">
+                        <p>Transactions</p>
+                    </a></li>
+                <li class="nav-item"><a class="pokemon-button" href="homepage(logout).html">
+                        <p>Logout</p>
+                    </a></li>
+            </ul>
+        </div>
+
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+            id="offcanvasScrolling">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="pokemon-button" href="homepage(logout).html">
+                            <p>News</p>
+                        </a></li>
+                    <li class="nav-item"><a class="pokemon-button" href="homepage(logout).html">
+                            <p>FAQs</p>
+                        </a></li>
+                    <li class="nav-item"><a class="pokemon-button" href="store_page.html">
+                            <p>Store</p>
+                        </a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid main">
+        <div class="card profile-card">
+            <div class="img-holder"><img src="https://media.tenor.com/KkJJOpdCJZMAAAAm/team-rocket-james.webp" alt=""
+                    id="img">
+                <p class="desc a1"><span class="player-title">Gab</span> <br>UID:1728 8123 8712 <span id="generatedID"></span><br> Gender:Male <br>Last
+                    played:1hr ago
+                </p>
+                <p class="desc a2">Bio : Playing Pokemon Go
+                    for 10 years! I don't know what else to do. I've already captured every pokemon I could catch huhu. Come play with me! @gab_pokemon15</p>
+            </div>
+
+            </div>
+        </div>
+        <section class="pokemon-spotlight">
+            <h2>Favorite Pokemons</h2>
+            <div class="spotlight-container">
+                <div class="spotlight-pokemon mewtwo-card">
+                    <img src="https://media.tenor.com/K2thrI_oaXsAAAAi/eevee-pokemon.gif" alt="Mewtwo">
+                    <h3>Eevee</h3>
+                    <p>Level 89</p>
+                </div>
+                <div class="spotlight-pokemon rayquaza-card">
+                    <img src="https://media.tenor.com/1-NfSZpnnAwAAAAj/blaziken-pokemon.gif" alt="Rayquaza">
+                    <h3>Blaziken</h3>
+                    <p>Level MAX</p>
+                </div>
+                <div class="spotlight-pokemon charizard-card">
+                    <img src="https://media.tenor.com/nvfY12IPMBcAAAAi/pokemon-snorlax.gif" alt="Charizard">
+                    <h3>Snorlax</h3>
+                    <p>Level 79</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<footer class="py-5">
+    <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="homepage.html" class="nav-link p-0 text-body-secondary">Pokemon Go
+                        Live</a></li>
+                <li class="nav-item mb-2"><a href="homepage.html"
+                        class="nav-link p-0 text-body-secondary">Leaderboard</a>
+                </li>
+                <li class="nav-item mb-2"><a href="homepage.html" class="nav-link p-0 text-body-secondary">Events</a>
+                </li>
+                <li class="nav-item mb-2"><a href="homepage.html" class="nav-link p-0 text-body-secondary">News</a></li>
+            </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3">
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="homepage.html" class="nav-link p-0 text-body-secondary">Support</a>
+                </li>
+                <li class="nav-item mb-2"><a href="homepage.html" class="nav-link p-0 text-body-secondary">Code
+                        Redemption</a></li>
+                <li class="nav-item mb-2"><a href="homepage.html" class="nav-link p-0 text-body-secondary">Community Day
+                        Map</a></li>
+            </ul>
+        </div>
+
+        <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+                <h5>Subscribe to our newsletter</h5>
+                <p>Monthly digest of what's new and exciting from us.</p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                    <label for="newsletter1" class="visually-hidden">Email address</label>
+                    <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                    <button class="btn btn-primary" type="button">Subscribe</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p>Pokémon GO is playable in English, French, German, Italian, Russian, Japanese, Spanish, Traditional
+            Chinese, Korean, Thai, Brazillian Portuguese, Turkish, and Indonesian. <br><br>©2023 Niantic, Inc.
+            ©2023 Pokémon. ©1995–2023 Nintendo / Creatures Inc. / GAME FREAK inc. Pokémon and Pokémon character
+            names are trademarks of Nintendo. Apple and the Apple logo are trademarks of Apple Inc., registered
+            in the U.S. and other countries. App Store is a service mark of Apple Inc. Android, Google Play and
+            the Google Play logo are trademarks of Google LLC. During gameplay, please be aware of your
+            surroundings and play safely. <br> DISCLAIMER: This webpage is for educational purposes only and no
+            copyright
+            infringement is intended. </p>
+        <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a href="https://www.youtube.com/@pokemongo" aria-label="youtube"
+                    data-ws-testid="layout-footer-social-links.social"><anchor-icon name="niantic-youtube"
+                        class="hydrated w-[25px]" aria-hidden="true"></anchor-icon></a>
+                </svg></a><anchor-icon name="niantic-youtube" class="hydrated w-[25px]"
+                    aria-hidden="true"></anchor-icon></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                        <use xlink:href="#instagram"></use>
+                    </svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                        <use xlink:href="#facebook"></use>
+                    </svg></a></li>
+        </ul>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+<script src="profile_page.js"></script>
+
+</html>
