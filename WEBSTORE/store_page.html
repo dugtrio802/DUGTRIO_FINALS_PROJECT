@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dugtrio Web Store</title>
+    <link rel="stylesheet" href="store_page.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700,0,800,0,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+</head>
+
+<body>
+    <header class="new-header">
+        <nav class="navbar navbar-expand-lg navbar-light" id="navi">
+            <a class="navbar-brand" href="homepage(logout).html">
+                <img src="GLOGO.png" alt="GLOGO Logo" height="100">
+            </a>
+
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse nav-head">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="pokemon-button" href="homepage.html">
+                            <p>News</p>
+                        </a></li>
+                    <li class="nav-item"><a class="pokemon-button" href="homepage.html">
+                            <p>FAQs</p>
+                        </a></li>
+                    <li class="nav-item"><a class="pokemon-button" href="store_page.html">
+                            <p>Store</p>
+                        </a></li>
+                    <li class="nav-item"><a class="pokemon-button" href="cart_page.html">
+                            <p>Cart</p>
+                        </a></li>
+                    <li class="nav-item"><a class="pokemon-button" href="profile_page.html">
+                            <p>Profile</p>
+                        </a></li>
+                    <li class="nav-item"><a class="pokemon-button" href="homepage(logout).html">
+                            <p>Logout</p>
+                        </a></li>
+                </ul>
+            </div>
+
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+                id="offcanvasScrolling">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="pokemon-button" href="homepage.html">
+                                <p>News</p>
+                            </a></li>
+                        <li class="nav-item"><a class="pokemon-button" href="homepage.html">
+                                <p>FAQs</p>
+                            </a></li>
+                        <li class="nav-item"><a class="pokemon-button" href="cart_page.html">
+                                <p>Cart</p>
+                            </a></li>
+                        <li class="nav-item"><a class="pokemon-button" href="profile_page.html">
+                                <p>Profile</p>
+                            </a></li>
+                        <li class="nav-item"><a class="pokemon-button" href="homepage(logout).html">
+                                <p>Logout</p>
+                            </a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="new-promo">
+        <p><span class="new-promo-highlight">15% off</span> for your first Web Store purchase on any item ₱59.00 or
+            more!</p>
+    </section>
+
+    <div class="big-gif-container">
+        <img src="STORE IMAGES/GIF.gif" alt="Your GIF" class="big-gif">
+    </div>
+
+    <nav class="new-secondary-nav">
+
+        <a href="#item-boxes">Item Boxes</a>
+        <a href="#poke-coins">PokéCoins</a>
+        <a href="#daily-bundles">Daily Bundles</a>
+    </nav>
+
+    <div class="red-background-section">
+
+        <section class="new-item-boxes" id="item-boxes">
+            <h2>Item Boxes</h2>
+            <div class="new-item-box-grid grid-carousel__strip">
+                <div class="new-item-box grid-carousel__item" data-toggle="modal" data-target="#itemModal"
+                    data-item-name="Stunning Styles Ultra Ticket Box" data-item-price="₱59.00"
+                    data-item-image="STORE IMAGES/Stunning Styles.png"
+                    data-item-details='["x3 Remote Raid Pass", "x3 Premium Battle Pass", "x1 Egg Incubator", "x60 Reward Points"]'
+                    data-item-message="Can only be purchased 3 times.">
+                    <img src="STORE IMAGES/Stunning Styles.png" alt="Stunning Styles" class="new-item-image">
+                    <div class="new-item-details">
+                        <p class="new-item-name">Stunning Styles Ultra Ticket Box</p>
+                        <p class="new-item-price">₱59.00</p>
+                    </div>
+                </div>
+                <div class="new-item-box grid-carousel__item" data-toggle="modal" data-target="#itemModal"
+                    data-item-name="Power Up Ticket Ultra Ticket Box" data-item-price="₱245.65"
+                    data-item-image="STORE IMAGES/Power Up.png"
+                    data-item-details='["x2 Remote Raid Pass", "x2 Premium Battle Pass", "x2 Egg Incubator", "x40 Reward Points"]'
+                    data-item-message="Limited offer!">
+                    <img src="STORE IMAGES/Power Up.png" alt="Power Up" class="new-item-image">
+                    <div class="new-item-details">
+                        <p class="new-item-name">Power Up Ticket Ultra Ticket Box</p>
+                        <p class="new-item-price">₱245.65</p>
+                    </div>
+                </div>
+                <div class="new-item-box grid-carousel__item" data-toggle="modal" data-target="#itemModal"
+                    data-item-name="GO Rocket Box" data-item-price="₱245.65"
+                    data-item-image="STORE IMAGES/GO Rocket.png"
+                    data-item-details='["x4 Remote Raid Pass", "x4 Premium Battle Pass", "x1 Egg Incubator", "x80 Reward Points"]'
+                    data-item-message="Special sale!">
+                    <img src="STORE IMAGES/GO Rocket.png" alt="Go Rocket" class="new-item-image">
+                    <div class="new-item-details">
+                        <p class="new-item-name">GO Rocket Box</p>
+                        <p class="new-item-price">₱245.65</p>
+                    </div>
+                </div>
+                <div class="new-item-box grid-carousel__item" data-toggle="modal" data-target="#itemModal"
+                    data-item-name="Ultra Raid Box" data-item-price="₱149.00"
+                    data-item-image="STORE IMAGES/Ultra Raid.png"
+                    data-item-details='["x3 Remote Raid Pass", "x3 Premium Battle Pass", "x1 Egg Incubator", "x60 Reward Points"]'
+                    data-item-message="Can only be purchased 3 times.">
+                    <img src="STORE IMAGES/Ultra Raid.png" alt="Ultra Raid" class="new-item-image">
+                    <div class="new-item-details">
+                        <p class="new-item-name">Ultra Raid Box</p>
+                        <p class="new-item-price">₱149.00</p>
+                    </div>
+                </div>
+                <div class="new-item-box grid-carousel__item" data-toggle="modal" data-target="#itemModal"
+                    data-item-name="Might and Mystery Box" data-item-price="₱149.00"
+                    data-item-image="STORE IMAGES/Might and Mastery.png"
+                    data-item-details='["x3 Remote Raid Pass", "x3 Premium Battle Pass", "x1 Egg Incubator", "x60 Reward Points"]'
+                    data-item-message="Can only be purchased 3 times.">
+                    <img src="STORE IMAGES/Might and Mastery.png" alt="Might" class="new-item-image">
+                    <div class="new-item-details">
+                        <p class="new-item-name">Might and Mystery Box</p>
+                        <p class="new-item-price">₱149.00</p>
+                    </div>
+                </div>
+                <div class="new-item-box grid-carousel__item" data-toggle="modal" data-target="#itemModal"
+                    data-item-name="Egg Incubator" data-item-price="₱88.00"
+                    data-item-image="STORE IMAGES/Egg Incubator.png"
+                    data-item-details='["x3 Remote Raid Pass", "x3 Premium Battle Pass", "x1 Egg Incubator", "x60 Reward Points"]'
+                    data-item-message="Can only be purchased 3 times.">
+                    <img src="STORE IMAGES/Egg Incubator.png" alt="Egg Incubator" class="new-item-image">
+                    <div class="new-item-details">
+                        <p class="new-item-name">Egg Incubator</p>
+                        <p class="new-item-price">₱88.00</p>
+                    </div>
+                </div>
+                <div class="new-item-box grid-carousel__item" data-toggle="modal" data-target="#itemModal"
+                    data-item-name="Super Incubator" data-item-price="₱88.00"
+                    data-item-image="STORE IMAGES/Super Incubator.png"
+                    data-item-details='["x3 Remote Raid Pass", "x3 Premium Battle Pass", "x1 Egg Incubator", "x60 Reward Points"]'
+                    data-item-message="Can only be purchased 3 times.">
+                    <img src="STORE IMAGES/Super Incubator.png" alt="Super Incubator" class="new-item-image">
+                    <div class="new-item-details">
+                        <p class="new-item-name">Super Incubator</p>
+                        <p class="new-item-price">₱88.00</p>
+                    </div>
+                </div>
+                <div class="new-item-box grid-carousel__item" data-toggle="modal" data-target="#itemModal"
+                    data-item-name="Max Revive" data-item-price="₱59.00" data-item-image="STORE IMAGES/Max Revive.png"
+                    data-item-details='["x3 Max Revive"]' data-item-message="Can only be purchased 3 times.">
+                    <img src="STORE IMAGES/Max Revive.png" alt="Max Revive" class="new-item-image">
+                    <div class="new-item-details">
+                        <p class="new-item-name">Max Revive</p>
+                        <p class="new-item-price">₱59.00</p>
+                    </div>
+                </div>
+                <div class="new-item-box grid-carousel__item" data-toggle="modal" data-target="#itemModal"
+                    data-item-name="Premium Battle Pass" data-item-price="₱88.00"
+                    data-item-image="STORE IMAGES/Battle Pass.png" data-item-details='["x1 Premium Battle Pass"]'
+                    data-item-message="Can only be purchased 3 times.">
+                    <img src="STORE IMAGES/Battle Pass.png" alt="Battlepass" class="new-item-image">
+                    <div class="new-item-details">
+                        <p class="new-item-name">Premium Battle Pass</p>
+                        <p class="new-item-price">₱88.00</p>
+                    </div>
+                </div>
+                <div class="new-item-box grid-carousel__item" data-toggle="modal" data-target="#itemModal"
+                    data-item-name="Max Particle Pack x6" data-item-price="₱235.00"
+                    data-item-image="STORE IMAGES/Particle Pack.png" data-item-details='["x6 Particle Pack"]'
+                    data-item-message="Can only be purchased 3 times.">
+                    <img src="STORE IMAGES/Particle Pack.png" alt="Particle Pack" class="new-item-image">
+                    <div class="new-item-details">
+                        <p class="new-item-name">Max Particle Pack x6</p>
+                        <p class="new-item-price">₱235.00</p>
+                    </div>
+                </div>
+                <div class="new-item-box grid-carousel__item" data-toggle="modal" data-target="#itemModal"
+                    data-item-name="Max Mushroom" data-item-price="₱245.65"
+                    data-item-image="STORE IMAGES/Max Mushroom.png" data-item-details='["x5 Max Mushroom"]'
+                    data-item-message="Can only be purchased 3 times.">
+                    <img src="STORE IMAGES/Max Mushroom.png" alt="Max Mushroom" class="new-item-image">
+                    <div class="new-item-details">
+                        <p class="new-item-name">Max Mushroom</p>
+                        <p class="new-item-price">₱245.65</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="new-poke-coins" id="poke-coins">
+            <h2>PokéCoins</h2>
+            <div class="new-coin-box-grid grid-carousel__strip">
+                <div class="new-coin-box grid-carousel__item" data-toggle="modal" data-target="#itemModal"
+                    data-item-name="110 PokéCoins" data-item-price="₱29.00" data-item-image="STORE IMAGES/110.png"
+                    data-item-details='["110 PokéCoins"]' data-item-message="Instant delivery!">
+                    <img src="STORE IMAGES/110.png" alt="110" class="new-item-image">
+                    <p class="new-coin-name">110 PokéCoins</p>
+                    <p class="new-coin-price">₱29.00</p>
+                </div>
+
+
+                <div class="new-coin-box grid-carousel__item" data-toggle="modal" data-target="#itemModal"
+                    data-item-name="600 PokéCoins" data-item-price="₱149.00" data-item-image="STORE IMAGES/600.png"
+                    data-item-details='["600 PokéCoins"]' data-item-message="Instant delivery!">
+                    <img src="STORE IMAGES/600.png" alt="600" class="new-item-image">
+                    <p class="new-coin-name">600 PokéCoins</p>
+                    <p class="new-coin-price">₱149.00</p>
+                </div>
+
+                <div class="new-coin-box grid-carousel__item" data-toggle="modal" data-target="#itemModal"
+                    data-item-name="1,300 PokéCoins" data-item-price="₱245.65" data-item-image="STORE IMAGES/1300.png"
+                    data-item-details='["1,300 PokéCoins"]' data-item-message="Instant delivery!">
+                    <img src="STORE IMAGES/1300.png" alt="1300" class="new-item-image">
+                    <p class="new-coin-name">1,300 PokéCoins</p>
+                    <p class="new-coin-price">₱245.65</p>
+                </div>
+
+                <div class="new-coin-box grid-carousel__item" data-toggle="modal" data-target="#itemModal"
+                    data-item-name="2,700 PokéCoins" data-item-price="₱500.65" data-item-image="STORE IMAGES/2700.png"
+                    data-item-details='["2,700 PokéCoins"]' data-item-message="Instant delivery!">
+                    <img src="STORE IMAGES/2700.png" alt="2700" class="new-item-image">
+                    <p class="new-coin-name">2,700 PokéCoins</p>
+                    <p class="new-coin-price">₱500.65</p>
+                </div>
+
+                <div class="new-coin-box grid-carousel__item" data-toggle="modal" data-target="#itemModal"
+                    data-item-name="5,600 PokéCoins" data-item-price="₱994.50" data-item-image="STORE IMAGES/5600.png"
+                    data-item-details='["5,600 PokéCoins"]' data-item-message="Instant delivery!">
+                    <img src="STORE IMAGES/5600.png" alt="5600" class="new-item-image">
+                    <p class="new-coin-name">5,600 PokéCoins</p>
+                    <p class="new-coin-price">₱994.50</p>
+                </div>
+
+                <div class="new-coin-box grid-carousel__item" data-toggle="modal" data-target="#itemModal"
+                    data-item-name="15,500 PokéCoins" data-item-price="₱2,507.50"
+                    data-item-image="STORE IMAGES/15500.png" data-item-details='["15,500 PokéCoins"]'
+                    data-item-message="Instant delivery!">
+                    <img src="STORE IMAGES/15500.png" alt="15500" class="new-item-image">
+                    <p class="new-coin-name">15,500 PokéCoins</p>
+                    <p class="new-coin-price">₱2,507.50</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="new-daily-bundles" id="daily-bundles">
+            <h2>Daily Bundles</h2>
+            <div class="new-bundle-box-grid grid-carousel__strip">
+                <div class="new-bundle-box grid-carousel__item" data-toggle="modal" data-target="#itemModal"
+                    data-item-name="Explorer Box" data-item-price="1,200 PokéCoins"
+                    data-item-image="STORE IMAGES/Explorer Box.png"
+                    data-item-details='["x20 Premium Battle Pass", "x30 Egg Incubator"]'
+                    data-item-message="Can only be purchased 1 time.">
+                    <img src="STORE IMAGES/Explorer Box.png" alt="Explorer" class="new-item-image">
+                    <p class="new-bundle-name">Explorer Box</p>
+                    <p class="new-bundle-price">1,200 PokéCoins</p>
+                </div>
+
+                <div class="new-bundle-box grid-carousel__item" data-toggle="modal" data-target="#itemModal"
+                    data-item-name="Hatch Box" data-item-price="5,250 PokéCoins"
+                    data-item-image="STORE IMAGES/Hatch Box.png"
+                    data-item-details='["x50 Super Incubator", "x50 Egg Incubator"]'
+                    data-item-message="Can only be purchased 1 time.">
+                    <img src="STORE IMAGES/Hatch Box.png" alt="Hatch" class="new-item-image">
+                    <p class="new-bundle-name">Hatch Box</p>
+                    <p class="new-bundle-price">5,250 PokéCoins</p>
+                </div>
+
+                <div class="new-bundle-box grid-carousel__item" data-toggle="modal" data-target="#itemModal"
+                    data-item-name="Legend Box" data-item-price="2,200 PokéCoins"
+                    data-item-image="STORE IMAGES/Legend Box.png"
+                    data-item-details='["x20 Charged TM", "x20 Fast TM", "x100 Premium Battle Pass"]'
+                    data-item-message="Can only be purchased 1 time.">
+                    <img src="STORE IMAGES/Legend Box.png" alt="Legend" class="new-item-image">
+                    <p class="new-bundle-name">Legend Box</p>
+                    <p class="new-bundle-price">2,200 PokéCoins</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="modal fade" id="itemModal" tabindex="-1" role="dialog" aria-labelledby="itemModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="itemModalLabel">LIMITED-TIME ONLY</h5>
+                    <button type="button" class="close d-none" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-image">
+                        <img id="itemModalImage" src="STORE IMAGES/Ultra Raid.png" alt="ultraball">
+                    </div>
+                    <h3 id="itemModalName">Ultra Raid Box</h3>
+                    <ul id="itemModalDetails">
+                        <li>
+                            <img src="STORE IMAGES/raid pass.png" alt="Remote Raid Pass"
+                                style="width: 24px; height: 24px; margin-right: 8px;">
+                            x3 Remote Raid Pass
+                        </li>
+                        <li>
+                            <img src="STORE IMAGES/Battle Pass.png" alt="Premium Battle Pass"
+                                style="width: 24px; height: 24px; margin-right: 8px;">
+                            x3 Premium Battle Pass
+                        </li>
+                        <li>
+                            <img src="STORE IMAGES/Egg Incubator.png" alt="Egg Incubator"
+                                style="width: 24px; height: 24px; margin-right: 8px;">
+                            x1 Egg Incubator
+                        </li>
+                    </ul>
+                    <p class="modal-price" id="itemModalPrice">₱149.00</p>
+                    <p id="itemModalMessage">Can only be purchased 3 times.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<footer class="py-5">
+    <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="homepage.html" class="nav-link p-0 text-body-secondary">Pokemon Go
+                        Live</a></li>
+                <li class="nav-item mb-2"><a href="homepage.html"
+                        class="nav-link p-0 text-body-secondary">Leaderboard</a>
+                </li>
+                <li class="nav-item mb-2"><a href="homepage.html" class="nav-link p-0 text-body-secondary">Events</a>
+                </li>
+                <li class="nav-item mb-2"><a href="homepage.html" class="nav-link p-0 text-body-secondary">News</a></li>
+            </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3">
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="homepage.html" class="nav-link p-0 text-body-secondary">Support</a>
+                </li>
+                <li class="nav-item mb-2"><a href="homepage.html" class="nav-link p-0 text-body-secondary">Code
+                        Redemption</a></li>
+                <li class="nav-item mb-2"><a href="homepage.html" class="nav-link p-0 text-body-secondary">Community Day
+                        Map</a></li>
+            </ul>
+        </div>
+
+        <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+                <h5>Subscribe to our newsletter</h5>
+                <p>Monthly digest of what's new and exciting from us.</p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                    <label for="newsletter1" class="visually-hidden">Email address</label>
+                    <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                    <button class="btn btn-primary" type="button">Subscribe</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p>Pokémon GO is playable in English, French, German, Italian, Russian, Japanese, Spanish, Traditional
+            Chinese, Korean, Thai, Brazillian Portuguese, Turkish, and Indonesian. <br><br>©2023 Niantic, Inc.
+            ©2023 Pokémon. ©1995–2023 Nintendo / Creatures Inc. / GAME FREAK inc. Pokémon and Pokémon character
+            names are trademarks of Nintendo. Apple and the Apple logo are trademarks of Apple Inc., registered
+            in the U.S. and other countries. App Store is a service mark of Apple Inc. Android, Google Play and
+            the Google Play logo are trademarks of Google LLC. During gameplay, please be aware of your
+            surroundings and play safely. <br> DISCLAIMER: This webpage is for educational purposes only and no
+            copyright
+            infringement is intended. </p>
+        <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a href="https://www.youtube.com/@pokemongo" aria-label="youtube"
+                    data-ws-testid="layout-footer-social-links.social"><anchor-icon name="niantic-youtube"
+                        class="hydrated w-[25px]" aria-hidden="true"></anchor-icon></a>
+                </svg></a><anchor-icon name="niantic-youtube" class="hydrated w-[25px]"
+                    aria-hidden="true"></anchor-icon></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                        <use xlink:href="#instagram"></use>
+                    </svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                        <use xlink:href="#facebook"></use>
+                    </svg></a></li>
+        </ul>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="store_page.js"></script>
+
+</html>
